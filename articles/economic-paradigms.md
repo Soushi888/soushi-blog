@@ -32,14 +32,14 @@ This corporatized version has had profound impacts on the labor market, with kno
 In contrast, a parallel information economy has emerged that challenges traditional notions of intellectual property and corporate control. This model emphasizes open access, collaborative production, and the democratization of knowledge.
 
 #### Open Source Movement
-Open Source Software (OSS) and Hardware (OSH) represent a revolutionary approach where code and design specifications are freely shared, modified, and distributed. Projects like Linux, Arduino, and WordPress demonstrate how collaborative development can create robust, innovative solutions that often outperform their proprietary counterparts. These initiatives have created new economic models based on:
+[Open-source software](https://en.wikipedia.org/wiki/Open-source_software) (OSS) and [open-source hardware](https://en.wikipedia.org/wiki/Open-source_hardware) (OSH) represent a revolutionary approach where code and design specifications are freely shared, modified, and distributed. Projects like Linux, Arduino, and Python demonstrate how collaborative development can create robust, innovative solutions that often outperform their proprietary counterparts. These initiatives have created new economic models based on:
 - Service and support rather than license fees
 - Community-driven innovation and peer review
 - Knowledge sharing as a driver of value creation
 - Distributed collaboration across organizational boundaries
 
 #### Open Science
-The Open Science movement extends these principles to research and academic knowledge production. Initiatives like arXiv, GenBank, and the Open Science Framework enable researchers to share preprints, data, and methodologies freely. This accelerates scientific progress and democratizes access to knowledge, particularly benefiting researchers and institutions in resource-constrained environments.
+The [open science](https://en.wikipedia.org/wiki/Open_science) movement extends these principles to research and academic knowledge production. Initiatives like arXiv, GenBank, and the [open science framework](https://en.wikipedia.org/wiki/Open_science) enable researchers to share preprints, data, and methodologies freely. This accelerates scientific progress and democratizes access to knowledge, particularly benefiting researchers and institutions in resource-constrained environments.
 
 #### Democratic Manufacturing
 3D printing technology exemplifies how open knowledge can transform physical production. By sharing CAD files and design knowledge through online communities, this technology has democratized manufacturing capabilities. Individuals and communities can now access, modify, and produce physical objects without relying on traditional manufacturing infrastructure, fostering innovation and local production capacity.
@@ -68,10 +68,10 @@ In both cases, what began as potentially transformative P2P technologies have la
 
 ### True P2P Economy: Decentralization and Value Networks
 
-In contrast, the emerging "true" P2P economy builds on technological and social innovations that enable genuine decentralization and peer governance. This model emphasizes direct value creation and exchange between participants, without corporate intermediaries.
+The emerging "true" P2P economy builds on technological and social innovations that enable genuine decentralization and peer governance. This model emphasizes direct value creation and exchange between participants, without corporate intermediaries. Organizations like the [P2P Foundation](https://p2pfoundation.net/) have been instrumental in documenting, researching, and promoting these alternative economic models since 2005, creating a vast knowledge commons about peer production, governance, and property.
 
 #### Open Value Networks
-OVNs exemplify genuine peer production, with decentralized, self-organizing networks enabling collaborative value creation. Projects like Sensorica demonstrate how participants can work together under principles of:
+[OVNs](http://valuenetwork.referata.com/) exemplify genuine peer production, with decentralized, self-organizing networks enabling collaborative value creation. Projects like [Sensorica](http://www.sensorica.co/) demonstrate how participants can work together under principles of:
 - Transparent governance
 - Equitable value distribution
 - Collective ownership
@@ -81,13 +81,13 @@ OVNs exemplify genuine peer production, with decentralized, self-organizing netw
 Mutual Credit Currencies (MCCs) provide the financial infrastructure for true P2P economics. These community-issued currencies, like the Sardex local currency in Sardinia, Italy, enable direct exchange without relying on traditional banking systems, fostering local economic resilience and community autonomy.
 
 #### Decentralized Infrastructure
-The technological foundation continues to evolve with frameworks like Holochain, which enables truly scalable peer-to-peer interactions through:
+The technological foundation continues to evolve with frameworks like [Holochain](https://holochain.org/), which enables truly scalable peer-to-peer interactions through:
 - Distributed hash table (DHT) architecture
 - Agent-centric design
 - Local chain sovereignty
 - Efficient resource usage
 
-HoloFuel, built on Holochain technology, represents an innovative implementation of mutual credit principles at a global scale, enabling participants to exchange hosting capacity and computational resources in a truly peer-to-peer manner without the bottlenecks of traditional blockchain-based cryptocurrencies.
+[HoloFuel](https://holo.host/), built on Holochain technology, represents an innovative implementation of mutual credit principles at a global scale, enabling participants to exchange hosting capacity and computational resources in a truly peer-to-peer manner without the bottlenecks of traditional blockchain-based cryptocurrencies.
 
 These innovations point toward a future where economic activity can be organized around principles of genuine collaboration and distributed value creation, rather than corporate extraction and control.
 
