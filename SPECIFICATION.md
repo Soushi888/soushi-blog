@@ -1,186 +1,229 @@
-# SveltePress Blog and Portfolio Specification
+# Astro Markdown Blog Specification
 
 ## Project Overview
-A personal website combining a blog and portfolio, built with SveltePress and extended with custom features for portfolio management.
+
+A personal blog built with Astro, leveraging its powerful markdown support and performance-focused architecture.
 
 ## Technical Stack
-- **Core Framework**: SveltePress
-- **UI Framework**: Skeleton UI
+
+- **Core Framework**: Astro
+- **Content Management**: Markdown files with frontmatter
 - **Styling**: TailwindCSS
-- **Content Management**: SveltePress's built-in MDsveX integration
-- **Deployment**: Static site generation
+- **Deployment**: Static site generation, GitHub Pages
 
 ## Core Features
 
-### 1. SveltePress Built-in Features (Used As-Is)
+### 1. Astro Built-in Features
+
 - File-based routing
-- Markdown processing with MDsveX
-- Automatic navigation generation
-- Built-in search functionality
-- Dark/Light mode support
+- Markdown/MDX processing
+- Static site generation
+- Image optimization
+- RSS feed generation
 - SEO optimization
-- Documentation features
+- TypeScript support
 
-### 2. Custom Portfolio Extensions
-- Project showcase components
-- Project filtering and sorting
-- Custom project metadata handling
-- Interactive project galleries
-- Technology stack visualization
+### 2. Blog Features
 
-### 3. Custom Blog Extensions
 - Enhanced blog post layouts
 - Series management
 - Reading time estimation
 - Related posts suggestions
-- Custom code block styling
+- Syntax highlighting for code blocks
+- Tag system
+- Category organization
 
-### 4. UI/UX Customization
-- Skeleton UI integration
-- Custom theme implementation
+### 3. UI/UX Features
+
 - Responsive design
-- Portfolio-specific components
-- Custom navigation layout
+- Dark/Light mode support
+- Fast page loads
+- Custom navigation
+- Search functionality
 
 ## Content Structure
-```
-content/
-├── .sveltepress/          # SveltePress configuration
-│   └── config.ts          # Site configuration
-├── blog/
-│   ├── posts/            # Blog posts
+
+```bash
+src/
+├── components/         # Reusable Astro components
+│   ├── layout/         # Layout components
+│   └── blog/           # Blog-specific components
+├── content/            # Markdown content
+│   ├── posts/          # Blog posts
 │   │   └── [...].md
-│   └── series/          # Blog series configuration
-│       └── _meta.json
-├── portfolio/
-│   ├── projects/        # Project showcases
-│   │   └── [...].md
-│   └── _meta.json      # Portfolio configuration
-└── pages/              # Static pages
-    └── about.md
+│   └── series/         # Blog series
+│       └── [...].md
+├── layouts/            # Page layouts
+├── pages/              # Astro pages
+│   ├── index.astro     # Home page
+│   ├── blog/           # Blog routes
+│   └── about.astro     # About page
+└── styles/             # Global styles
 ```
 
 ## Metadata Structure
 
 ### Blog Post Frontmatter
+
 ```yaml
 ---
 title: "Blog Post Title"
 description: "Short description"
-date: 2025-01-05
+pubDate: 2025-01-05
+updatedDate: 2025-01-14
 series:
   name: "Optional Series Name"
   order: 1
 tags: 
-  - SvelteKit
   - Web Development
-categories:
   - Programming
 featured: true
----
-```
-
-### Project Frontmatter
-```yaml
----
-title: "Project Name"
-description: "Project description"
-date: 2025-01-05
-technologies:
-  - SvelteKit
-  - TypeScript
-status: "Completed"
-links:
-  github: "https://github.com/..."
-  demo: "https://..."
-featured: true
+draft: false
 ---
 ```
 
 ## Custom Components
 
-### Portfolio Components
+### Blog Components
+
 ```typescript
-// src/lib/components/portfolio/
-- ProjectCard.svelte
-- TechStack.svelte
-- ProjectGallery.svelte
-- ProjectFilter.svelte
-- ProjectList.svelte
+// src/components/blog/
+- PostCard.astro
+- TableOfContents.astro
+- SeriesNavigation.astro
+- TagCloud.astro
+- PostMeta.astro
+- RelatedPosts.astro
 ```
 
-### Blog Components
+### Layout Components
+
 ```typescript
-// src/lib/components/blog/
-- SeriesNavigation.svelte
-- PostMeta.svelte
-- RelatedPosts.svelte
-- TableOfContents.svelte
+// src/components/layout/
+- BaseLayout.astro
+- BlogPost.astro
+- Header.astro
+- Footer.astro
+- Navigation.astro
 ```
 
 ## Implementation Strategy
 
-### 1. SveltePress Configuration
+### 1. Astro Configuration
+
 ```typescript
-// .sveltepress/config.ts
-export default {
-  title: 'My Portfolio & Blog',
-  theme: {
-    extend: {
-      Layout: './src/lib/layouts/CustomLayout.svelte',
-      components: {
-        // Custom component overrides
-      }
-    }
-  },
+// astro.config.mjs
+export default defineConfig({
+  site: 'https://yourblog.com',
+  integrations: [
+    tailwind(),
+    mdx(),
+    sitemap(),
+  ],
   markdown: {
-    // Custom MDsveX configuration
+    shikiConfig: {
+      theme: 'dracula'
+    },
     remarkPlugins: [],
     rehypePlugins: []
   }
-}
+})
 ```
 
-### 2. Custom Theme Integration
-```typescript
-// src/lib/theme/
-- skeleton.ts      // Skeleton UI configuration
-- tailwind.css    // Custom TailwindCSS styles
-- typography.css  // Typography customization
-```
+### 2. Content Management
 
-### 3. Data Management
-- Utilize SveltePress's built-in data handling
-- Extend with custom stores for portfolio data
-- Implement filtering and sorting utilities
+- Use Astro's Content Collections API
+- Implement series and tag organization
+- Add search functionality
+- RSS feed generation
 
-### 4. Search Enhancement
-- Extend SveltePress's search to include project metadata
-- Custom search result components
-- Advanced filtering options
+### 3. Performance Optimization
 
-## Development Workflow
-1. Install and configure SveltePress
-2. Implement custom theme with Skeleton UI
-3. Develop portfolio extensions
-4. Enhance blog features
-5. Add custom components
-6. Configure deployment
-
-## Performance Considerations
-- Leverage SveltePress's built-in optimizations
-- Implement image optimization
-- Use dynamic imports for large components
-- Optimize custom component rendering
+- Image optimization with Astro's built-in tools
+- Minimal client-side JavaScript
+- Efficient asset loading
+- Responsive images
 
 ## SEO Strategy
-- Utilize SveltePress's SEO features
-- Implement custom meta tags for projects
-- Generate project-specific sitemaps
-- Optimize image alt texts
+
+- Implement meta tags
+- Generate sitemap
+- RSS feed
+- Semantic HTML structure
+- Optimized image alt texts
+
+## Development Workflow
+
+1. Set up Astro project
+2. Configure content collections
+3. Implement layouts and components
+4. Add blog features
+5. Style with TailwindCSS
+6. Configure deployment
+
+## Deployment Strategy
+
+### GitHub Pages Deployment
+
+- **Hosting Platform**: GitHub Pages
+- **Deployment Method**: GitHub Actions
+- **Build Process**:
+  - Automatic build on push to `main` branch
+  - Static site generation with Astro
+- **Configuration File**: `.github/workflows/deploy.yml`
+
+#### GitHub Actions Workflow Example
+
+```yaml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build site
+        run: npm run build
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+```
+
+#### Repository Configuration
+
+- **Main Branch**: Source code
+- **gh-pages Branch**: Deployed static site
+- **Custom Domain**: Optional configuration in repository settings
+
+## Continuous Integration
+
+- Automated builds on every push
+- Automatic deployment to GitHub Pages
+- Built-in caching for faster builds
+- Easy rollback to previous versions
 
 ## Future Extensibility
-- Plugin system for new features
-- Custom markdown directives
-- API integration capabilities
-- Analytics integration
+
+- Integration with headless CMS
+- Comments system
+- Newsletter integration
+- Analytics implementation
+- Social media sharing
