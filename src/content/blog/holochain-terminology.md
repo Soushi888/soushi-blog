@@ -5,11 +5,9 @@ pubDate: 2024-01-20
 author: "soushi888"
 tags: ["Holochain", "Distributed Systems", "P2P", "Technical Guide", "Development"]
 category: "Technical Documentation"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/blog-placeholder-2.jpg"
 featured: true
 ---
-
-# Holochain Technical Terminology: A Developer's Lexicon
 
 This lexicon provides a comprehensive mapping between Holochain-specific terminology and conventional software development concepts. It's designed to help developers familiar with traditional architectures understand Holochain's distributed paradigm.
 

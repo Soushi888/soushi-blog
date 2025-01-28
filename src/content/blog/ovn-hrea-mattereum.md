@@ -4,11 +4,8 @@ pubDate: 2024-01-15
 author: "soushi888"
 description: "An exploration of how Holochain's hREA and Mattereum's Asset Passport technology can enhance Open Value Networks"
 tags: ["Holochain", "Mattereum", "OVN", "hREA", "Peer Production"]
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/blog-placeholder-4.jpg"
 ---
-
-# Integrating Holochain, Mattereum and OVN: A Framework for Peer Production
-
 
 The integration of Holochain, hREA, and Mattereum technologies provides a transformative framework for Open Value Networks (OVNs) engaged in peer production, combining Holochain's decentralized contribution tracking and economic modeling with Mattereum's legal asset tokenization and Asset Passport technology to enable equitable value distribution, global market access, and legally enforceable ownership of collaboratively produced assets.
 

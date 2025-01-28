@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import ThemeToggle from './ThemeToggle.astro';
 ---
 
 <header>
@@ -12,6 +13,7 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
 		<div class="social-links">
+			<ThemeToggle />
 			<a href="https://x.com/soushi888" target="_blank">
 				<span class="sr-only">Follow me on X</span>
 				<svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32">
@@ -46,9 +48,12 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: rgba(var(--gray-light), 0.05);
+		box-shadow: 0 1px 0 rgba(var(--gray), 0.1);
+		backdrop-filter: blur(10px);
+		transition: var(--theme-transition);
 	}
+
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -57,29 +62,61 @@ import { SITE_TITLE } from '../consts';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: rgb(var(--text-main));
 	}
+
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0.5rem 0;
 	}
+
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
+		padding: 0.5em;
+		color: rgb(var(--text-main));
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		transition: var(--theme-transition);
 	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
+
+	nav a:hover {
+		color: var(--accent);
 	}
+
+	.social-links,
+	.internal-links {
+		display: flex;
+		align-items: center;
+		gap: 0.75em;
+	}
+
+	.social-links svg {
+		color: rgb(var(--text-main));
+		opacity: 0.8;
+		transition: var(--theme-transition);
+	}
+
+	.social-links a:hover svg {
+		color: var(--accent);
+		opacity: 1;
+	}
+
 	@media (max-width: 720px) {
+		nav {
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 1rem 0;
+		}
 		.social-links {
-			display: none;
+			width: 100%;
+			justify-content: center;
+			padding-top: 1rem;
 		}
 	}
 </style>
