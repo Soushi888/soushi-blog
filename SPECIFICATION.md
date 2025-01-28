@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A personal blog built with Astro, leveraging its powerful markdown support and performance-focused architecture.
+A personal blog built with Astro, leveraging its powerful markdown support and performance-focused architecture. The blog will be integrated with Substack for enhanced reader engagement and newsletter distribution.
 
 ## Technical Stack
 
@@ -32,6 +32,9 @@ A personal blog built with Astro, leveraging its powerful markdown support and p
 - Syntax highlighting for code blocks
 - Tag system
 - Category organization
+- Substack integration
+- Newsletter subscription
+- Subscriber-only content
 
 ### 3. UI/UX Features
 
@@ -40,6 +43,9 @@ A personal blog built with Astro, leveraging its powerful markdown support and p
 - Fast page loads
 - Custom navigation
 - Search functionality
+- Newsletter signup form
+- Comment section integration
+- Social sharing buttons
 
 ## Content Structure
 
@@ -79,8 +85,67 @@ tags:
   - Programming
 featured: true
 draft: false
+substackLink: "https://substack.com/post-url"  # Link to corresponding Substack post
+isSubscriberOnly: false  # Whether this is exclusive content
 ---
 ```
+
+## Content Strategy
+
+### Themes and Topics
+
+#### 1. Introductory & Philosophical
+- Foundation-laying articles
+- New economic paradigms exploration
+- P2P economy fundamentals
+
+#### 2. Deep Dives & Technical Topics
+- Holochain technology
+- Mutual Credit Currencies
+- Open Value Networks
+- Technical implementation details
+
+#### 3. Current Trends & Opinions
+- AI developments
+- Distributed Networks
+- Emerging P2P technologies
+- Industry analysis
+
+### Publishing Schedule
+- Bi-weekly publication cycle
+- Week 1: Research and drafting
+- Week 2: Refinement and publication
+- Alternating between philosophical and technical content
+
+### Platform Integration
+
+#### Substack Usage
+- Primary platform for newsletters
+- Subscriber engagement
+- Exclusive content distribution
+- Community discussions
+- Polls and surveys
+
+#### Astro Blog Role
+- Content archive
+- SEO optimization
+- Technical documentation
+- Resource hub
+- Cross-platform integration
+
+### Promotion Strategy
+- Active social media presence (Twitter, LinkedIn, Reddit)
+- Community engagement in P2P forums
+- Collaboration with thought leaders
+- Content repurposing across platforms
+- Regular newsletter distribution
+
+### Success Metrics
+- Subscriber growth
+- Engagement rates
+- SEO performance
+- Community growth
+- Social media impact
 
 ## Custom Components
 
