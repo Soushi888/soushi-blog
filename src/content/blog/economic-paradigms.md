@@ -1,13 +1,12 @@
 ---
 title: "The Rise of New Economic Paradigms: Between Corporate Co-optation and Economic Emancipation"
-date: "2025-01-06"
+pubDate: "2025-01-06"
 last_updated: "2025-01-09"
 author: "Soushi888"
 description: "An analysis of how the information and peer-to-peer economies manifest in two forms: as tools for corporate control and as pathways to economic emancipation. Exploring the tension between co-optation and genuine alternatives in digital age economics."
 tags: ["economics", "technology", "p2p", "information economy", "digital transformation", "open source", "blockchain", "economic emancipation", "platform capitalism"]
+heroImage: "/blog-placeholder-3.jpg"
 ---
-
-# The Rise of New Economic Paradigms: Between Corporate Co-optation and Economic Emancipation
 
 ## Introduction
 
