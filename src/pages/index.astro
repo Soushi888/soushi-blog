@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Button from "../components/Button.astro";
 ---
 
 <!doctype html>
@@ -10,40 +11,56 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body
+    class="font-atkinson bg-background-light dark:bg-background-dark bg-gradient-custom dark:bg-gradient-custom-dark min-h-screen"
+  >
     <Header title={SITE_TITLE} />
-    <main>
-      <h1>Welcome to {SITE_TITLE}</h1>
-      <p class="intro">
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <h1 class="text-4xl font-bold text-text-main">Welcome to {SITE_TITLE}</h1>
+      <p class="text-xl text-text-secondary mt-4 mb-8">
         Exploring the future of peer-to-peer economies, distributed systems, and
         new economic paradigms. Join me on this journey of understanding and
         building the next generation of economic systems.
       </p>
 
-      <section class="features">
-        <h2>What You'll Find Here</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>🎯 Focus Areas</h3>
-            <ul>
+      <section class="my-16">
+        <h2 class="text-3xl font-bold text-text-main mb-8">
+          What You'll Find Here
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white/50 dark:bg-gray-dark/30 p-6 rounded-lg shadow-custom dark:shadow-custom-dark"
+          >
+            <h3 class="text-xl font-bold text-text-main mb-4">
+              🎯 Focus Areas
+            </h3>
+            <ul class="space-y-2 text-text-secondary">
               <li>P2P Economy Fundamentals</li>
               <li>New Economic Paradigms</li>
               <li>Technical Deep Dives</li>
               <li>Practical Applications</li>
             </ul>
           </div>
-          <div class="feature-card">
-            <h3>📚 Content Types</h3>
-            <ul>
+          <div
+            class="bg-white/50 dark:bg-gray-dark/30 p-6 rounded-lg shadow-custom dark:shadow-custom-dark"
+          >
+            <h3 class="text-xl font-bold text-text-main mb-4">
+              📚 Content Types
+            </h3>
+            <ul class="space-y-2 text-text-secondary">
               <li>In-depth Articles</li>
               <li>Technical Tutorials</li>
               <li>Case Studies</li>
               <li>Series & Guides</li>
             </ul>
           </div>
-          <div class="feature-card">
-            <h3>🌟 Special Features</h3>
-            <ul>
+          <div
+            class="bg-white/50 dark:bg-gray-dark/30 p-6 rounded-lg shadow-custom dark:shadow-custom-dark"
+          >
+            <h3 class="text-xl font-bold text-text-main mb-4">
+              🌟 Special Features
+            </h3>
+            <ul class="space-y-2 text-text-secondary">
               <li>Newsletter Integration</li>
               <li>Series Management</li>
               <li>Code Highlighting</li>
@@ -53,78 +70,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </div>
       </section>
 
-      <section class="cta">
-        <h2>Stay Connected</h2>
-        <p>
+      <section class="text-center my-16">
+        <h2 class="text-3xl font-bold text-text-main mb-4">Stay Connected</h2>
+        <p class="text-text-secondary mb-8 max-w-2xl mx-auto">
           Subscribe to my newsletter to receive the latest insights, tutorials,
           and updates about P2P economies and distributed systems.
         </p>
-        <a href="/blog" class="button">Read the Blog</a>
+        <Button href="/blog" variant="primary">Read the Blog</Button>
       </section>
     </main>
     <Footer />
-    <style>
-      main {
-        width: 960px;
-        max-width: calc(100% - 2em);
-        margin: 0 auto;
-        padding: 3em 1em;
-      }
-      .intro {
-        font-size: 1.2em;
-        line-height: 1.6;
-        margin: 1em 0 2em;
-      }
-      .features {
-        margin: 4em 0;
-      }
-      .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2em;
-        margin-top: 2em;
-      }
-      .feature-card {
-        background: var(--gray-gradient);
-        padding: 1.5em;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(var(--black), 5%);
-      }
-      .feature-card h3 {
-        margin: 0 0 1em;
-        font-size: 1.25em;
-      }
-      .feature-card ul {
-        margin: 0;
-        padding: 0 0 0 1.5em;
-      }
-      .feature-card li {
-        margin: 0.5em 0;
-      }
-      .cta {
-        text-align: center;
-        margin: 4em 0;
-      }
-      .button {
-        display: inline-block;
-        padding: 1em 2em;
-        background-color: var(--accent);
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: background-color 0.2s;
-      }
-      .button:hover {
-        background-color: var(--accent-dark);
-      }
-      h1 {
-        font-size: 2.5em;
-        margin: 0;
-      }
-      h2 {
-        font-size: 2em;
-        margin: 0 0 1em;
-      }
-    </style>
   </body>
 </html>

@@ -1,8 +1,14 @@
+@import "tailwindcss";
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+@theme {
+  --primary: #2337ff;
+}
 
 :root {
   --accent: #2337ff;
@@ -18,9 +24,8 @@
   --gray-gradient: rgba(var(--gray-light), 50%), rgb(var(--background));
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
-  
-  --theme-transition: background-color 0.3s ease,
-    color 0.3s ease,
+
+  --theme-transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease;
 }
 
@@ -34,8 +39,7 @@
   --gray-light: 32, 32, 40;
   --gray-dark: 220, 220, 235;
   --gray-gradient: rgba(var(--gray-light), 95%), rgb(var(--background));
-  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35),
-    0 8px 24px rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 @font-face {
@@ -53,7 +57,6 @@
   font-display: swap;
 }
 
-/* Add transitions to elements that change with theme */
 html {
   transition: var(--theme-transition);
 }
