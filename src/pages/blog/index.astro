@@ -15,94 +15,36 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      main {
-        width: 960px;
-      }
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      ul li {
-        width: calc(50% - 1rem);
-        transition: transform 0.2s ease;
-      }
-      ul li:hover {
-        transform: translateY(-2px);
-      }
-      .title {
-        margin: 0;
-        color: rgb(var(--text-main));
-        line-height: 1.2;
-        font-size: 1.5em;
-      }
-      .date {
-        margin: 0;
-        color: rgb(var(--gray));
-      }
-      ul li a {
-        display: block;
-        text-decoration: none;
-        padding: 1.5rem;
-        background-color: rgba(var(--gray-light), 0.1);
-        border-radius: 12px;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(var(--gray), 0.1);
-        box-shadow: 0 4px 6px rgba(var(--gray), 0.1);
-        transition: var(--theme-transition);
-      }
-      ul li a:hover {
-        background-color: rgba(var(--gray-light), 0.2);
-        border-color: rgba(var(--gray), 0.2);
-      }
-      .hero-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 1rem;
-      }
-      .description {
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-        color: rgb(var(--text-secondary));
-      }
-      @media (max-width: 720px) {
-        ul {
-          gap: 1rem;
-        }
-        ul li {
-          width: 100%;
-        }
-        main {
-          width: 100%;
-          max-width: none;
-        }
-      }
-    </style>
   </head>
   <body>
     <Header />
-    <main>
+    <main class="w-full max-w-[960px] mx-auto p-4">
       <section>
-        <ul>
+        <ul class="flex flex-wrap gap-8 list-none m-0 p-0">
           {
             posts.map((post) => (
-              <li>
-                <a href={`/blog/${post.id}/`}>
+              <li class="w-[calc(50%-1rem)] transition-transform duration-200 ease-in-out hover:-translate-y-0.5">
+                <a
+                  href={`/blog/${post.id}/`}
+                  class="block no-underline p-6 bg-gray-light/10 rounded-xl backdrop-blur-md border border-gray/10 shadow-md transition duration-300 hover:bg-gray-light/20 hover:border-gray/20"
+                >
                   {post.data.heroImage && (
-                    <img class="hero-image" src={post.data.heroImage} alt="" />
+                    <img
+                      class="w-full h-[200px] object-cover rounded-lg mb-4"
+                      src={post.data.heroImage}
+                      alt=""
+                    />
                   )}
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
+                  <h4 class="m-0 text-text-main leading-tight text-2xl">
+                    {post.data.title}
+                  </h4>
+                  <p class="m-0 text-gray">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                   {post.data.description && (
-                    <p class="description">{post.data.description}</p>
+                    <p class="mt-2 mb-0 text-text-secondary">
+                      {post.data.description}
+                    </p>
                   )}
                 </a>
               </li>
