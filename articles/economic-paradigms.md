@@ -31,16 +31,20 @@ This corporatized version has had profound impacts on the labor market, with kno
 In contrast, a parallel information economy has emerged that challenges traditional notions of intellectual property and corporate control. This model emphasizes open access, collaborative production, and the democratization of knowledge.
 
 #### Open Source Movement
+
 [Open-source software](https://en.wikipedia.org/wiki/Open-source_software) (OSS) and [open-source hardware](https://en.wikipedia.org/wiki/Open-source_hardware) (OSH) represent a revolutionary approach where code and design specifications are freely shared, modified, and distributed. Projects like Linux, Arduino, and Python demonstrate how collaborative development can create robust, innovative solutions that often outperform their proprietary counterparts. These initiatives have created new economic models based on:
+
 - Service and support rather than license fees
 - Community-driven innovation and peer review
 - Knowledge sharing as a driver of value creation
 - Distributed collaboration across organizational boundaries
 
 #### Open Science
+
 The [open science](https://en.wikipedia.org/wiki/Open_science) movement extends these principles to research and academic knowledge production. Initiatives like arXiv, GenBank, and the [open science framework](https://en.wikipedia.org/wiki/Open_science) enable researchers to share preprints, data, and methodologies freely. This accelerates scientific progress and democratizes access to knowledge, particularly benefiting researchers and institutions in resource-constrained environments.
 
 #### Democratic Manufacturing
+
 3D printing technology exemplifies how open knowledge can transform physical production. By sharing CAD files and design knowledge through online communities, this technology has democratized manufacturing capabilities. Individuals and communities can now access, modify, and produce physical objects without relying on traditional manufacturing infrastructure, fostering innovation and local production capacity.
 
 ## The Peer-to-Peer Economy: From Platform Capitalism to True Decentralization
@@ -50,6 +54,7 @@ The peer-to-peer (P2P) economy represents another transformative shift, manifest
 ### The Platform-Mediated "Sharing Economy"
 
 The first wave of P2P economic activity emerged through corporate-controlled platforms that facilitate peer-to-peer transactions. Companies like Airbnb, Uber, and Kickstarter act as intermediaries, providing infrastructure and trust mechanisms while maintaining centralized control over:
+
 - Market access and rules
 - User data and interactions
 - Revenue streams and value distribution
@@ -58,6 +63,7 @@ The first wave of P2P economic activity emerged through corporate-controlled pla
 This "uberization" of the economy, while creating opportunities for flexible work and asset monetization, ultimately reproduces and intensifies traditional capitalist power structures through digital means.
 
 A parallel example of corporate co-optation can be seen in the blockchain and Web3 space. While originally conceived as tools for decentralization and peer-to-peer value exchange, much of the ecosystem has been captured by venture capital interests and speculation-driven development. This has led to:
+
 - Concentration of token ownership among wealthy investors
 - Focus on speculative trading over practical applications
 - Governance systems dominated by large token holders
@@ -70,17 +76,22 @@ In both cases, what began as potentially transformative P2P technologies have la
 The emerging "true" P2P economy builds on technological and social innovations that enable genuine decentralization and peer governance. This model emphasizes direct value creation and exchange between participants, without corporate intermediaries. Organizations like the [P2P Foundation](https://p2pfoundation.net/) have been instrumental in documenting, researching, and promoting these alternative economic models since 2005, creating a vast knowledge commons about peer production, governance, and property.
 
 #### Open Value Networks
+
 [OVNs](http://valuenetwork.referata.com/) exemplify genuine peer production, with decentralized, self-organizing networks enabling collaborative value creation. Projects like [Sensorica](http://www.sensorica.co/) demonstrate how participants can work together under principles of:
+
 - Transparent governance
 - Equitable value distribution
 - Collective ownership
 - Collaborative decision-making
 
 #### Alternative Economic Tools
+
 Mutual Credit Currencies (MCCs) provide the financial infrastructure for true P2P economics. These community-issued currencies, like the Sardex local currency in Sardinia, Italy, enable direct exchange without relying on traditional banking systems, fostering local economic resilience and community autonomy.
 
 #### Decentralized Infrastructure
+
 The technological foundation continues to evolve with frameworks like [Holochain](https://holochain.org/), which enables truly scalable peer-to-peer interactions through:
+
 - Distributed hash table (DHT) architecture
 - Agent-centric design
 - Local chain sovereignty
@@ -163,12 +174,14 @@ This transformation won't happen overnight, but the tools and frameworks are eme
 The information and peer-to-peer economies represent more than just technological innovations or new business models - they embody the potential for fundamental economic transformation. While both paradigms have been partially co-opted by corporate interests, their underlying principles offer powerful tools for building more equitable and sustainable economic systems.
 
 The true promise lies in the convergence of commons-based information sharing and genuine P2P coordination. This synthesis creates possibilities for:
+
 - Democratic ownership and governance of economic systems
 - Knowledge and value creation that serves community needs
 - Resilient local economies connected through global networks
 - Technology that empowers rather than exploits
 
 However, realizing this potential requires conscious effort to resist corporate co-optation and maintain focus on emancipatory practices. Success depends on:
+
 1. Building and supporting genuine alternatives to corporate platforms
 2. Protecting and expanding the knowledge commons
 3. Developing community-controlled economic infrastructure
